@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+    <title>Contacto</title>
+    <meta name="description" content="Este es el sitio web de mi servicio de mensajeria. Encontraras informacion relacionada a tarifas, servicios, vehiculos y viajes.">
+    <meta name="keywords" content="KATARI, MENSAJERIA, VIAJES, PEDIDOS, CONTACTO">
+</head>
+
+<body>
+    <header class="encabezado">
+
+        <img class="logo" src="fotos/KATARI logo pag negro.png " />
+
+
+        <nav class="nav">
+
+            <ul class="menu">
+                <li class="elemento">
+                    <a class="a1" href="index.html">Inicio</a>
+                </li>
+
+                <li class="elemento"><a class="a1" href="vehículo.html">Vehiculos</a></li>
+
+                <li class="elemento"><a class="a1" href="tarifas.html">Tarifas</a></li>
+
+                <li class="elemento"><a class="a1" href="contacto.html">Contacto</a></li>
+
+                <li class="elemento"><a class="a1" href="covid19.html">Covid 19</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section">
+        <h1> Contacto</h1>
+
+        <fieldset>
+            <legend>Formulario de contacto </legend>
+            <form action="#">
+                <div>
+                    <label for="Nombre">Completa con tu nombre </label>
+                    <input type="text" name="Nombre" placeholder="Introduce tu nombre">
+
+                </div>
+
+                <div>
+                    <label for="apellido">Completa con tu
+                        apellido </label>
+
+                    <input type="text" name="apellido" placeholder="Introduce tu apellido">
+
+                </div>
+
+                <div>
+                    <label for="email">Completa tu email</label>
+                    <input type="email" name="email" required>
+                </div>
+
+                <div>
+
+                    <label for="Provincia">Completa a que provincia perteneces</label>
+
+
+
+                    <select name="Provincia" id="" required>
+
+                        <option value="Buenos aires">Buenos aires</option>
+                        <option value="Santa Fe"> Santa Fe</option>
+                        <option value="Entre Ríos">Entre Ríos</option>
+                        <option value="Córdoba">Córdoba</option>
+                        <option value="San Luis">San Luis</option>
+                    </select>
+
+                </div>
+
+                <div>
+                    <label for="Género">Género</label>
+                    <input type="radio" name="genero" value="Mujer"> Mujer
+                    <input type="radio" name="genero" value="Hombre"> Hombre
+                    <input type="radio" name="genero" value="Sin especificar"> Sin especificar
+                </div>
+
+                <div>
+                    <label for="Comentarios">Comentarios</label>
+                    <textarea name="Comentarios" id="" cols="20" rows="10"></textarea>
+                </div>
+
+
+                <div> 
+                    <input type="submit" value="Enviar datos"> </div>
+                <div>
+                    <input type="reset" value="Borrar ">
+                </div>
+
+
+            </form>
+        </fieldset>
+    </section>
+    <footer class="footer"> Katari 2021. </footer>
+</body>
+
+</html>
