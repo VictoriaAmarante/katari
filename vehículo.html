@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+  <title>Vehículos</title>
+  <meta name="description" content="Este es el sitio web de mi servicio de mensajeria. Encontraras informacion relacionada a tarifas, servicios, vehiculos y viajes.">
+  <meta name="keywords" content="KATARI, MENSAJERIA, VIAJES, PEDIDOS">
+</head>
+
+<body>
+  <header class="encabezado">
+    <img class="logo rounded-3 w-30 d-block text-center" src="fotos/KATARI logo pag negro.png " />
+    <nav class="nav w-100 d-flex flex-column">
+      <ul class="menu d-flex flex-row align-items-center justify-content-around list-group">
+        <li class="elemento list-group-item list-group-item-action bg-dark d-flex align-items-center justify-content-center">
+          <a class="a1 text-white text-decoration-none" href="index.html">Inicio</a>
+        </li>
+
+        <li class="elemento list-group-item list-group-item-action bg-dark d-flex align-items-center justify-content-center"><a class="a1 text-decoration-none text-white" href="vehículo.html">Vehiculos</a></li>
+
+        <li class="elemento list-group-item list-group-item-action bg-dark d-flex align-items-center justify-content-center"><a class="a1 text-decoration-none text-white" href="tarifas.html">Tarifas</a></li>
+
+        <li class="elemento list-group-item list-group-item-action bg-dark d-flex align-items-center justify-content-center"><a class="a1 text-decoration-none text-white" href="contacto.html">Contacto</a></li>
+
+        <li class="elemento list-group-item list-group-item-action bg-dark d-flex align-items-center justify-content-center"><a class="a1 text-nowrap text-decoration-none text-white" href="covid19.html">Covid 19</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="container-fluid ">
+    <article class="row">
+      <div class="col-12">
+        <h2>Vehículos de Katari</h2>
+        <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="fotos/fiatsiena.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="fotos/fiatpalio.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="fotos/fiatcronos.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span></button>
+        </div>
+        <p>Imagenes ilustrativas de los autos actualmente de la empresa.Autos exclusivos de traslados de Personas y
+          viajes programados de larga distancia.</p>
+
+
+      </div>
+
+
+    </article>
+    <!-- acordeon de descripcion -->
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item bg-secondary border-0">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            CARACTERISTICAS GENERALES
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Todos nuestros autos son modelos 2016 en adelante.</strong>
+            Los autos son dos volúmenes de 5
+            puertas.El interior del auto espacioso,dentro de encontrarás: cinturones de seguridad, doble airbag frontal.
+            Por otro lado la capacidad de baúl queda homologada en 440 litros. Se puede decir que ofrece una muy buena
+            relación calidad/precio. Tiene nuevos paragolpes, faros, la parrilla delantera, los pilotos y las llantas de
+            aluminio. Eso por fuera. Únicamente de tracción delantera.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item bg-secondary border-0">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button bg-primary text-white collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            MECANICA
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>En lineas generales:</strong> Hay dos opciones mecánicas, ambas nafteras: Firefly 1.3 8v (99 cv,
+            sólo caja manual de cinco velocidades) y E.torQ 1.8 16v (130 cv, con caja manual de cinco velocidades o
+            automática Aisin con convertidor de par y seis marchas). Tracción delantera.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item bg-secondary border-0">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button bg-primary text-white collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            SEGURIDAD
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Seguridad de todos nuestos autos.</strong> Viene de serie con barras de protección laterales y
+            refuerzos en acero de alta resistencia. Los niveles de equipamiento Precision y HGT vienen de serie con
+            control de estabilidad, control de tracción y asistencia al arranque en pendiente,doble airbag frontal,
+            frenos ABS y anclajes Isofix
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <footer class="footer"> Katari 2021. </footer>
+
+</body>
+
+</html>
