@@ -1,0 +1,61 @@
+@import "colores";
+
+.boton {
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #0f4728;
+  color: $textcolor;
+  letter-spacing: 1px;
+  &:hover {
+    background-color: #26e67c;
+  }
+}
+
+.servicios {
+  background-color: $bgcolor2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+}
+
+.articulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.articleTitle {
+  text-align: initial;
+}
+
+@mixin borderRadius10 {
+  border-radius: 10%;
+}
+
+.foto1 {
+  @include borderRadius10();
+  width: 30%;
+}
+
+.foto2 {
+  @include borderRadius10();
+  width: 35%;
+}
+
+.section {
+  padding-left: 5px;
+}
+
+.tablaMarginBottom {
+  margin-bottom: 15px;
+}
+
+.elemento2 {
+  margin-left: 15px;
+}
+

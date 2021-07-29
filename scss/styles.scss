@@ -1,0 +1,55 @@
+@import "colores";
+@import "header";
+@import "seccion";
+@import "bootstrap";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $bgcolor2;
+  font-family: "Bebas Neue", cursive;
+}
+
+p {
+  font-size: 18px;
+  text-align: center;
+  color: $textcolor2;
+}
+
+h3 {
+  font-size: 22px;
+  text-align: center;
+  color: $textcolor;
+}
+
+footer {
+  background: linear-gradient(90deg, #010103 0%, #0f4728 54%, $bgcolor2 100%);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: $textcolor;
+  text-align: center;
+}
+
+@mixin textoGrandeCentrado() {
+  color: $textcolor;
+  text-align: center;
+}
+
+.subtitulo {
+  @include textoGrandeCentrado();
+  font-size: 32px;
+}
+
+.titulo {
+  @include textoGrandeCentrado();
+  font-size: 34px;
+}
+
+.imagenFondo {
+  width: 100%;
+}
+
