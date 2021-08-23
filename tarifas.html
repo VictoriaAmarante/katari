@@ -5,126 +5,157 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/styles.css" />
     <title>Tarifas</title>
-    <meta name="description" content="Este es el sitio web de mi servicio de mensajeria. Encontraras informacion relacionada a tarifas, servicios, vehiculos y viajes.">
+    <meta name="description"
+        content="Este es el sitio web de mi servicio de mensajeria. Encontraras informacion relacionada a tarifas, servicios, vehiculos y viajes.">
     <meta name="keywords" content="KATARI, MENSAJERIA, VIAJES, PEDIDOS, TARIFAS, PRECIOS">
 </head>
 
 <body>
-    <header class="encabezado">
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark m-0 p-0">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="./fotos/LogoKatari.png" alt="Logo Katari" height="50px" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-around">
+            <a class="nav-link w-100" aria-current="page" href="index.html">
+              <li class="nav-item d-flex justify-content-center align-items-center">
+                Inicio
+              </li>
+            </a>
+            <a class="nav-link w-100" aria-current="page" href="vehículo.html">
+              <li class="nav-item d-flex justify-content-center align-items-center">
+                Vehiculos
+              </li>
+            </a>
+            <a class="nav-link w-100" aria-current="page" href="tarifas.html">
+              <li class="nav-item d-flex justify-content-center align-items-center">
+                Tarifas
+              </li>
+            </a>
+            <a class="nav-link w-100 " aria-current="page" href="mercadoflex.html">
+              <li class="nav-item d-flex justify-content-center align-items-center">
+                Mercado Flex
+              </li>
+            </a>
+            <a class="nav-link w-100 " aria-current="page" href="covid19.html">
+              <li class="nav-item d-flex justify-content-center align-items-center">
+                COVID 19
+              </li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+<main>
 
-        <img class="logo" src="fotos/KATARI logo pag negro.png " />
+  <section class="section2">
+        <div>
+            <table class="table table-sm">
+                <thead>
+                    <tr>
+                        <!-- <th scope="col">Nº</th> -->
+                        <th scope="col">KM</th>
+                        <th scope="col">VALOR IDA</th>
+                        <th scope="col">VALOR IDA Y VUELTA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1-2</th>
+                        <td>$250</td>
+                        <td>$350</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3-4</th>
+                        <td>$250</td>
+                        <td>$350</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5-6</th>
 
+                        <td>$250</td>
+                        <td>$350</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7-8</th>
 
-        <nav class="nav">
+                        <td>$250</td>
+                        <td>$350</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8 > </th>
 
-            <ul class="menu">
-                <li class="elemento">
-                    <a class="a1" href="index.html">Inicio</a>
-                </li>
+                        <td>$250</td>
+                        <td>$350</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-                <li class="elemento"><a class="a1" href="vehículo.html">Vehiculos</a></li>
-
-                <li class="elemento"><a class="a1" href="tarifas.html">Tarifas</a></li>
-
-                <li class="elemento"><a class="a1" href="contacto.html">Contacto</a></li>
-
-                <li class="elemento"><a class="a1" href="covid19.html">Covid 19</a></li>
-
-            </ul>
-        </nav>
-    </header>
-
-    <section class="section">
-        <h1 class="titulo">TARIFAS</h1>
-        <table class="tablaMarginBottom" border="1">
-            <tr>
-
-                <th>DISTANCIA</th>
-                <th>VALOR IDA</th>
-                <th>VALOR IDA Y VUELTA</th>
-            </tr>
-            <tr>
-                <td>2 km</td>
-                <td>$200</td>
-                <td>$300</td>
-            </tr>
-            <tr>
-                <td>3 km</td>
-                <td>$250</td>
-                <td>$350</td>
-            </tr>
-            <tr>
-                <td>4 km</td>
-                <td>$300</td>
-                <td>$400</td>
-            </tr>
-            <tr>
-                <td>5 km</td>
-                <td>$350</td>
-                <td>$450</td>
-            </tr>
-            <tr>
-                <td>6 km</td>
-                <td>$400</td>
-                <td>$500</td>
-            </tr>
-            <tr>
-                <td>7 km</td>
-                <td>$450</td>
-                <td>$550</td>
-            </tr>
-            <tr>
-                <td>8 km</td>
-                <td>$600</td>
-                <td>$700</td>
-            </tr>
-            <tr>
-                <td>A partir de 8 km en adelante (KM)</td>
-                <td>$40</td>
-                <td>$38</td>
-            </tr>
-
-        </table>
-
-        <h2 class="subtitulo">Recomendaciones</h2>
-
-        <ol type="none">
-            <strong>
-                <li>Cotización</li>
-            </strong>
-            <ol type="none">
-                <li class="elemento2">Primer paso: Debes calcular la distancia que hay desde el punto de retiro hasta el punto exacto
-                    de entrega.</li>
-                <li class="elemento2">Segundo paso: Una vez obtenida la distancia ,te situas en la tabla y obtendra el precio sobre el
-                    estimado de tu cotizacion.</li>
-                <li class="elemento2">Tercer paso: Decidir si el viaje sera solo ida o ida y vuelta.</li>
-            </ol>
-
-
-            <li><strong>Contactarnos</strong></li>
+        <div>
+            <h2 class="text-center">Recomendaciones</h2>
 
             <ol type="none">
-                <li class="elemento2">Desde la opcion en nuestra web en el menu "Contactos".</li>
-                <li class="elemento2">Via redes sociales. </li>
-                <li class="elemento2">Desde el número de telefono que figura en nuestra web. <a
-                        href="https://wa.me/+5491168308784 ">(Telefono)</a></li>
+                <strong>
+                    <li>Cotización</li>
+                </strong>
+                <ol type="none">
+                    <li class="elemento2">Primer paso: Debes calcular la distancia que hay desde el punto de retiro hasta el punto exacto de entrega.
+                        de entrega.</li>
+                    <li class="elemento2">Segundo paso: Una vez obtenida la distancia ,te situas en la tabla y obtendrás el precio sobre el estimado de tu cotización.</li>
+                    <li class="elemento2">Tercer paso: Decidir si el viaje será sólo ida o ida y vuelta.</li>
+                </ol>
 
+
+                <li><strong>Contactarnos</strong></li>
+
+                <ol type="none">
+                    <li class="elemento2">Desde la opción en nuestra web en el icono de "whatsapp".</li>
+                    <li class="elemento2">Vía redes sociales. </li>
+                    <li class="elemento2">Desde el número de teléfono que figura en nuestra web. (Teléfono)
+                        <a
+                            href="https://wa.me/+5491168308784 ">(Telefono)</a></li>
+
+                </ol>
+                <strong>
+                    <li>Reserva de pedido</li>
+                </strong>
+                <ol type="none">
+                    <li class="elemento2"> Puedes contactarnos directamente para coordinar tu reserva.</li>
+                    <li class="elemento2">Puedes hacer tu reserva vía email</li>
+                    <li class="elemento2">Puedes acceder a los beneficios de descuentos al reservar tu pedido/viaje.
+                    </li>
+                </ol>
             </ol>
-            <strong>
-                <li>Reserva de pedido</li>
-            </strong>
-            <ol type="none">
-                <li class="elemento2"> Puedes contactarnos directamente para coordinar tu reserva.</li>
-                <li class="elemento2">Puedes hacer tu reserva via email.</li>
-                <li class="elemento2">Puedes acceder a los beneficios de descuentos al reservar tu pedido/viaje.</li>
-            </ol>
-        </ol>
+        </div>
     </section>
 
+
+    <div>
+        <a href="https://wa.me/5491168308784?text=Hola!%20Me%20gustaría%20agendar%20un%20viaje" class="whatsapp"
+          target="_blank"><i class="fa fa-whatsapp whatsapp-icon"></i></a>
+      </div>
+</main>
+  
+
     <footer class="footer"> Katari 2021. </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 

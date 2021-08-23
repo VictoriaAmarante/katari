@@ -1,102 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <title>Katari mensajeria</title>
-    <meta name="description" content="Este es el sitio web de mi servicio de mensajeria. Encontraras informacion relacionada a tarifas, servicios, vehiculos y viajes.">
-    <meta name="keywords" content="KATARI, MENSAJERIA, VIAJES, PEDIDOS">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./css/styles.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap" rel="stylesheet">
+
+  <title>Katari mensajeria</title>
+  <meta name="description"
+    content="Este es el sitio web de mi servicio de mensajeria. Encontraras informacion relacionada a tarifas, servicios, vehiculos y viajes.">
+  <meta name="keywords" content="KATARI, MENSAJERIA, VIAJES, PEDIDOS">
+
 </head>
 
 <body>
 
-    <header class="encabezado">
-
-        <img class="logo" src="fotos/KATARI logo pag negro.png " />
-
-
-        <nav class="nav">
-
-            <ul class="menu">
-                <li class="elemento">
-                    <a class="a1" href="index.html">Inicio</a>
-                </li>
-
-                <li class="elemento"><a class="a1" href="vehículo.html">Vehiculos</a></li>
-
-                <li class="elemento"><a class="a1" href="tarifas.html">Tarifas</a></li>
-
-                <li class="elemento"><a class="a1" href="contacto.html">Contacto</a></li>
-
-                <li class="elemento"><a class="a1" href="covid19.html">Covid 19</a></li>
-
-            </ul>
-        </nav>
-    </header>
-
-    <section class="color">
-
-        <article class="articulo">
-            <h1 class="titulo">¡Atención 24 HS!</h1>
-
-
-            <img class="imagenFondo" src="fotos/foto fondo de autos.png"
-                alt="Foto de presentacion del fondo de seccion">
-
-            <a class="boton" href="https://wa.me/+5491168308784 ">Whatsapp
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark m-0 p-0">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="./fotos/LogoKatari.png" alt="Logo Katari" height="50px" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-around">
+            <a class="nav-link w-100" aria-current="page" href="index.html">
+              <li class="nav-item d-flex justify-content-center align-items-center">
+                Inicio
+              </li>
             </a>
+            <a class="nav-link w-100" aria-current="page" href="vehículo.html">
+              <li class="nav-item d-flex justify-content-center align-items-center">
+                Vehiculos
+              </li>
+            </a>
+            <a class="nav-link w-100" aria-current="page" href="tarifas.html">
+              <li class="nav-item d-flex justify-content-center align-items-center">
+                Tarifas
+              </li>
+            </a>
+            <a class="nav-link w-100 " aria-current="page" href="mercadoflex.html">
+              <li class="nav-item d-flex justify-content-center align-items-center">
+                Mercado Flex
+              </li>
+            </a>
+            <a class="nav-link w-100 " aria-current="page" href="covid19.html">
+              <li class="nav-item d-flex justify-content-center align-items-center">
+                COVID 19
+              </li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <div id="carouselKatari" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselKatari" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselKatari" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselKatari" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <h1>Example head line</h1>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
 
-        </article>
+          <div class="carousel-item">
+            <div class="container">
+
+              <h1>Second slide label</h1>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+
+              <h1>Third slide label</h1>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselKatari" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselKatari" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </section>
-    <!-- Nosotros -->
-    <section class="color">
+
+    <!-- Nosotros, Experiencia, Area de cobertura -->
+    <section class="gridIndex">
+      <div>
         <em>
-            <h2 class="animate__animated animate__slideInDown subtitulo">Nosotros</h2>
+          <h2 class="animate__animated animate__slideInDown text-center">Nosotros</h2>
         </em>
         <p>
-            Somos una empresa que se dedica al cuidado de tus paquetes,pedidos y traslados en cada viaje. </p>
-        <em>
-            <h2 class="animate__animated animate__slideInDown subtitulo">Experiencia</h2>
-        </em>
-        <p>Hace 2 años en el mercado,ofreciendo el mejor servicio. Seguro,confiable y puntual. Contamos con vehículos
-            adaptadados a tus necesidades para cada traslado sea un pedido o de personal.
+          Somos una empresa que se dedica al cuidado de tus paquetes,pedidos y traslados en cada viaje.
+          Contamos con un sistema de comunicación permanente conectado a nuestra central, esto le ofrece la oportunidad
+          de
+          que en el momento solicitado, su trámite sea ajustado de inmediato a sus requerimientos
         </p>
-    </section>
+      </div>
 
-
-    <section class="color">
+      <div>
         <em>
-            <h2 class="animate__animated animate__slideInDown subtitulo">Nuestros servicios </h2>
+          <h2 class="animate__animated animate__slideInDown text-center">Experiencia</h2>
         </em>
+        <p>Desde hace 2 años ofreciendo el mejor servicio. Seguro, confiable y puntual. Contamos con vehículos
+          adaptados a tus necesidades para cada traslado, sea un pedido o de personal.
+          Nuestro personal es altamente profesional, se encuentra capacitado para atenderlo de la mejor manera
+          orientándolo
+          según sus necesidades.
+        </p>
+      </div>
 
-        <div class="servicios">
-
-            <article>
-                <h3 class="articleTitle">Mensajeria y Mercado Flex </h3>
-
-                <img class="foto1" src="fotos/paqueteria .jpg" />
-            </article>
-
-
-            <article>
-                <h3 class="articleTitle"> Traslados Programados</h3>
-                <img class="foto2" src="fotos/foto auto.jpg" alt="foto ilustrativa de automovil">
-            </article>
-
-            
-        </div>
+      <div>
+        <em>
+          <h2 class="animate__animated animate__slideInDown text-center">Área de cobertura</h2>
+        </em>
+        <h3>C.A.B.A</h3>
+        <p>Cobertura sobre todas las Comunas de CABA</p>
+        <h3>G.B.A NORTE </h3>
+        <p>Cobertura sobre los partidos de: San Isidro, Vicente López, San Martín, San Fernando y Tigre.</p>
+        <h3>G.B.A OESTE</h3>
+        <P>Cobertura sobre los partidos de: La Matanza,Tres de Febrero,Hurlingham,Morón,Ituzaingó,Merlo,Moreno,General
+          Rodríguez,Marcos Paz.</P>
+        <h3>G.B.A SUR</h3>
+        <p>Cobertura sobre los partidos de: Almirante Brown, Avellaneda, Quilmes, Lanús, Florencio Várela, Berazategui,
+          Lomas de Zamora, Esteban Echeverría </p>
+      </div>
     </section>
 
 
-    <footer class="footer"> Katari 2021. </footer>
+    <div>
+      <a href="https://wa.me/5491168308784?text=Hola!%20Me%20gustaría%20agendar%20un%20viaje" class="whatsapp"
+        target="_blank"><i class="fa fa-whatsapp whatsapp-icon"></i></a>
+    </div>
+  </main>
 
+
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container-footer">
+      <span>Katari 2021</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
-<!-- <h5 class="footer__footer1">Katari mensajeria 2021</h5> -->
