@@ -1,61 +1,168 @@
 @import "colores";
 
-.boton {
-  margin: 10px auto;
-  padding: 10px;
-  background-color: #0f4728;
-  color: $textcolor;
-  letter-spacing: 1px;
-  &:hover {
-    background-color: #26e67c;
-  }
-}
-
-.servicios {
-  background-color: $bgcolor2;
+@mixin flexCentered {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 15px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 5px;
-}
-
-.articulo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.articleTitle {
-  text-align: initial;
 }
 
 @mixin borderRadius10 {
   border-radius: 10%;
 }
 
-.foto1 {
+.fotoCovid {
   @include borderRadius10();
   width: 30%;
 }
 
-.foto2 {
+.fotoCovid2 {
   @include borderRadius10();
   width: 35%;
 }
 
-.section {
-  padding-left: 5px;
+// Mercado Flex
+
+
+.flex {
+  padding: 30px;
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+.flextitle1 {
+  padding: 25px;
+  font-size: 38px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.flextitle2 {
+  padding: 15px;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0.5px;
 }
 
-.tablaMarginBottom {
-  margin-bottom: 15px;
+.flexparrafo {
+  padding: 2px;
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: 0.2px;
 }
 
-.elemento2 {
-  margin-left: 15px;
+.sectionMercadoFlex {
+  padding: 30px;
+  width: 80%;
+  display: block;
+  margin: auto;
+  color: rgb(24, 122, 122);
+  background-color: #fff;
 }
+
+// Covid 19
+
+.fotoCovid {
+  display: flex;
+  margin: auto;
+  width: 30%;
+}
+.fotoCovid2 {
+  display: flex;
+  margin: auto;
+  width: 40%;
+}
+
+// Covid 19
+.grid {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 50% 50%;
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+}
+
+.section2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 10px;
+}
+
+// Pagina principal
+
+.carousel {
+  background-image: url(./fotofondodeautos.png);
+  background-size: cover;
+}
+
+.carousel-item {
+  height: 25rem;
+  color: white;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 50px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.nav-link:hover {
+  background-color: green;
+  color: white;
+}
+
+.container-footer {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+}
+
+.whatsapp:hover{
+  color: #FFF;
+  transform: scale(1.25);
+  transition: all 300ms ease-in-out ;
+}
+
+.whatsapp-icon {
+  margin-top: 13px;
+}
+
+.gridIndex {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-column-gap: 10px;
+}
+
+// vehículos
+.vehiculos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.auto {
+  display: flex;
+  flex: 1 1 auto;
+}
+
 

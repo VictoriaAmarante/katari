@@ -1,5 +1,4 @@
 @import "colores";
-@import "header";
 @import "seccion";
 @import "bootstrap";
 
@@ -10,14 +9,14 @@
 }
 
 body {
-  background-color: $bgcolor2;
-  font-family: "Bebas Neue", cursive;
+  background-color: #fffffff3;
+  font-family: 'Quattrocento Sans', sans-serif;
 }
 
 p {
   font-size: 18px;
-  text-align: center;
-  color: $textcolor2;
+  text-align:left;
+  color: #39603D;
 }
 
 h3 {
@@ -26,30 +25,15 @@ h3 {
   color: $textcolor;
 }
 
-footer {
-  background: linear-gradient(90deg, #010103 0%, #0f4728 54%, $bgcolor2 100%);
-  padding-top: 15px;
-  padding-bottom: 15px;
-  color: $textcolor;
-  text-align: center;
-}
 
 @mixin textoGrandeCentrado() {
   color: $textcolor;
   text-align: center;
 }
 
-.subtitulo {
-  @include textoGrandeCentrado();
-  font-size: 32px;
-}
 
-.titulo {
+.titulo1 {
   @include textoGrandeCentrado();
   font-size: 34px;
-}
-
-.imagenFondo {
-  width: 100%;
 }
 
