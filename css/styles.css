@@ -149,11 +149,7 @@
     grid-template-columns: 50% 50%;
     grid-column-gap: 10px; }
   .tabla-centrada {
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; } }
+    padding: 15px; } }
 
 .bg-primary {
   background-color: #0f4728 !important; }
