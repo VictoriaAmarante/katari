@@ -6,6 +6,90 @@
   border-radius: 10%;
   width: 35%; }
 
+.carousel {
+  background-image: url(./../fotos/fotofondodeautos.png);
+  background-size: cover; }
+
+.carousel-item {
+  height: 25rem;
+  color: white;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.25); }
+
+.container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 50px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+
+.textWhite {
+  color: #FFF; }
+
+.nav-link:hover {
+  background-color: green;
+  color: white; }
+
+.container-footer {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  bottom: 0;
+  position: inherit; }
+
+.position-absolute {
+  position: absolute; }
+
+.whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100; }
+
+.whatsapp:hover {
+  color: #FFF;
+  transform: scale(1.25);
+  transition: all 300ms ease-in-out; }
+
+.whatsapp-icon {
+  margin-top: 13px; }
+
+.gridIndex {
+  display: grid;
+  grid-template-rows: 30% 30% 30%;
+  grid-row-gap: 10px;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px; }
+
+@media only screen and (min-width: 720px) {
+  .gridIndex {
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 10px; } }
+
+.vehiculos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
+
+.auto {
+  width: 100%; }
+
+@media only screen and (min-width: 720px) {
+  .vehiculos {
+    flex-direction: row; }
+  .auto {
+    width: 50%; } }
+
 .flex {
   padding: 30px;
   width: 50%;
@@ -14,20 +98,20 @@
 
 .flextitle1 {
   padding: 25px;
-  font-size: 38px;
+  font-size: 34px;
   text-align: center;
   letter-spacing: 1px; }
 
 .flextitle2 {
   padding: 15px;
   font-size: 32px;
-  text-align: center;
+  text-align: left;
   letter-spacing: 0.5px; }
 
-.flexparrafo {
+.flexParrafo {
   padding: 2px;
   font-size: 22px;
-  text-align: center;
+  text-align: left;
   letter-spacing: 0.2px; }
 
 .sectionMercadoFlex {
@@ -57,82 +141,25 @@
 
 .section2 {
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-column-gap: 10px; }
+  grid-template-rows: 50% 50%;
+  grid-row-gap: 10px; }
 
-.carousel {
-  background-image: url(./fotofondodeautos.png);
-  background-size: cover; }
-
-.carousel-item {
-  height: 25rem;
-  color: white;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0.25); }
-
-.container {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding-bottom: 50px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
-
-.nav-link:hover {
-  background-color: green;
-  color: white; }
-
-.container-footer {
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  padding-bottom: 1rem;
-  padding-top: 1rem; }
-
-.whatsapp {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 40px;
-  right: 40px;
-  background-color: #25d366;
-  color: #FFF;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 30px;
-  z-index: 100; }
-
-.whatsapp:hover {
-  color: #FFF;
-  transform: scale(1.25);
-  transition: all 300ms ease-in-out; }
-
-.whatsapp-icon {
-  margin-top: 13px; }
-
-.gridIndex {
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
-  grid-column-gap: 10px; }
-
-.vehiculos {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly; }
-
-.auto {
-  display: flex;
-  flex: 1 1 auto; }
+@media only screen and (min-width: 720px) {
+  .section2 {
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 10px; }
+  .tabla-centrada {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; } }
 
 .bg-primary {
   background-color: #0f4728 !important; }
 
 .bg-secondary {
   background-color: #DADED4 !important; }
-
-.bg-dark {
-  background-color: #FFF !important; }
 
 .text-white {
   letter-spacing: 2px; }
@@ -144,7 +171,8 @@
 
 body {
   background-color: #fffffff3;
-  font-family: 'Quattrocento Sans', sans-serif; }
+  font-family: 'Quattrocento Sans', sans-serif;
+  height: 100%; }
 
 p {
   font-size: 18px;
